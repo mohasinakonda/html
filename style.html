@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css tutorial</title>
+    <style>
+        div{
+        max-width:500px;
+
+        background: #f2f2f2;
+        padding:20px;
+        border-radius:10px;
+        margin:auto;
+
+        }
+        input[type=text], select{
+       width:100%;
+        display:inline-block;
+        padding:10px  ;
+        margin:10px 15px;
+        box-sizing:border-box;
+        border-bottom:2px solid red;
+        border-radius:5px;
+        outline:none;
+        font-size:20px;
+
+        }
+        input[type=text], select:focus{
+        
+        }
+        label{
+        margin-left:15px;
+         font-size:20px;
+
+        }
+        input[type=submit]{
+        margin:5px 15px ;
+        padding:10px;
+        width:100%;
+        background:#4CAF50;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+
+        }
+        input[type=search]{
+        width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid red;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('image/search3.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 8px 40px;
+  outline:none;
+  margin:15px;
+}
+
+        }
+    </style>
+</head>
+<body>
+        <h3>Using CSS to style an HTML Form</h3>
+    <div>
+        <form >
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter fname">
+            <label for="lname"> First Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter lname">
+
+            <label for="country"> Country</label>
+            <select name="country" id="country">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="indonesia">Indonesia</option>
+
+            </select>
+            <label for="search"> Search</label>
+            <input type="search" name="search" id="search" placeholder="search..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
